@@ -1,3 +1,4 @@
+// John Tunisi and Douglas Money
 //
 //  ViewController.swift
 //  Lab3
@@ -8,11 +9,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class DistanceBearingViewController: UIViewController, UITextFieldDelegate {
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func userTappedBackground(sender: AnyObject) {
+        view.endEditing(true)
+    }
 
 }
 
